@@ -16,7 +16,7 @@ const boton = document.querySelector('.buttonNext')
 let categoria = ""
 let dificultad = ""
 let tipo = ""
-let url = "https://opentdb.com/api.php?amount=10&"
+let url = ""
 
 //funciones
 const actualizar = (texto, texto2, seleccion) => {
@@ -30,12 +30,13 @@ const actualizar = (texto, texto2, seleccion) => {
         tipo = texto
         type.textContent = texto2
     }
+    console.log(categoria, dificultad, tipo);
 }
 const generarUrl = () => {
     if (categoria === "" || dificultad === "" || tipo === "") {
         alert("Verifique que haya seleccionado una categoria, dificultad y tipo.")
     } else {
-        url += categoria + "&" + dificultad + "&" + tipo
+        url = "https://opentdb.com/api.php?amount=10&" + categoria + "&" + dificultad + "&" + tipo
     }
     console.log(url);
 }
