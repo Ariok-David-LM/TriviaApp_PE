@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Exo', sans-serif;
+    width: 100vw; height: 100vh;
+    overflow: hidden;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+img {
+    min-width: 15%;min-height: 25%;
+    max-width: 20%; max-height: 40%;
+    position: absolute;
+    top: 20vh;
+    left: 40vw;
+}
+
+.context {
+    width: 100%;
+    position: absolute;
+    top: 65vh; left: 40vw;
+
+}
+
+.context h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+}
+
+header {
+    padding-top: 10px;
+    width: 100vw; height: 5vw;
+    min-height: 5vh; min-width: 5vw;
+    text-align: center;
+    background-color: #FCF6B1;
+    font-size: 40px;
+    color: salmon;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.start {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1a0124;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #33256d;
+    cursor: pointer;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 20%;
+    min-width: 20%;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+.start:disabled {
+    pointer-events: none;
+}
+
+.start:hover {
+    color: #fff;
+    background-color: #120228;
+    box-shadow: rgba(82, 24, 133, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.start:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+
+.area {
+    background: #A9E5BB;
+    width: 100vw; height: 92vh;
+}
+
+.stars {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    overflow: hidden;
+}
+
+.stars li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 20px;
+    background: rgb(67, 160, 87);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+
+}
+
+.stars li:nth-child(1) {
+    left: 25%;
+    width: 80px; height: 80px;
+    animation-delay: 0s;
+}
+
+.stars li:nth-child(2) {
+    left: 10%;
+    width: 20px; height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.starsli:nth-child(3) {
+    left: 70%;
+    width: 20px; height: 20px;
+    animation-delay: 4s;
+}
+
+.stars li:nth-child(4) {
+    left: 40%;
+    width: 60px; height: 60px;
+    animation-delay: 0s;
+    animation-duration: 10s;
+}
+
+.stars li:nth-child(5) {
+    left: 65%;
+    width: 20px; height: 20px;
+    animation-delay: 0s;
+}
+
+.stars li:nth-child(6) {
+    left: 75%;
+    width: 80px; height: 80px;
+    animation-delay: 6s;
+}
+
+.stars li:nth-child(7) {
+    left: 35%;
+    width: 110px; height: 110px;
+    animation-delay: 7s;
+}
+
+.stars li:nth-child(8) {
+    left: 50%;
+    width: 35px; height: 35px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.stars li:nth-child(9) {
+    left: 20%;
+    width: 25px; height: 25px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.stars li:nth-child(10) {
+    left: 85%;
+    width: 100px; height: 100px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        clip-path: polygon(0 17%, 60% 40%, 60% 0%, 100% 50%, 60% 100%, 58% 55%, 0% 80%);
+    }
+
+}
+
+.qm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+/*Question Circle*/
+.circle {
+    position: absolute;
+    top: 10vh;
+    padding: 0;
+    margin: 1em auto;
+    width: 15em; height: 15em;
+    border-radius: 50%;
+    list-style: none;
+    overflow: hidden;
+    box-shadow: 0 0 2px;
+}
+
+.circle>li {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%; height: 50%;
+    transform-origin: 0% 100%;
+    box-sizing: border-box;
+}
+
+.circle li:nth-child(1) {
+    transform: rotate(0deg) skewY(-30deg);
+    background: salmon;
+    opacity: 0.8;
+}
+
+.circle li:nth-child(2) {
+    transform: rotate(60deg) skewY(-30deg);
+    background: tomato;
+    opacity: 0.8;
+}
+
+.circle li:nth-child(3) {
+    transform: rotate(120deg) skewY(-30deg);
+    background: orange;
+    opacity: 0.8;
+}
+
+.circle li:nth-child(4) {
+    transform: rotate(180deg) skewY(-30deg);
+    background: gold;
+}
+
+.circle li:nth-child(5) {
+    transform: rotate(240deg) skewY(-30deg);
+    background: yellow;
+}
+
+.circle li:nth-child(6) {
+    transform: rotate(300deg) skewY(-30deg);
+    background: navajowhite;
+}
+
+
+
+
+.outerCircle {
+    width: 100px;
+    height: 100px;
+    background-color: #bcf4d8;
+    box-shadow:  10px 5px 10px black;
+    position: fixed;
+    top: 33vh; left: 46vw;
+    z-index: 1;
+    border-radius: 50% 50% 5% 50%;
+    -webkit-transition: -webkit-transform .9s ease-in-out;
+    -ms-transition: -ms-transform .9s ease-in-out;
+    transition: transform 1.1s ease-in-out; 
+
+}
+.outerCircle:hover {
+    transform:rotate(720deg);
+    -ms-transform:rotate(720deg);
+    -webkit-transform:rotate(720deg);
+    
+}
+
+@media screen and (max-width: 650px) {
+    .outerCircle {
+        position: fixed;
+        top: 28vh; left: 33vw;
+        z-index: 1;
+    }
+    header {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .outerCircle {
+        position: fixed;
+        top: 27vh; left: 42vw;
+        z-index: 1;
+    }
+    header {
+        font-size: 20px;
+    }
+}
+
