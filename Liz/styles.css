@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
-* {
-    margin: 0px;
-    padding: 0px;
-}
+* {margin: 0px; padding: 0px;}
 
 body {
     font-family: 'Exo', sans-serif;
@@ -20,10 +17,9 @@ body {
 }
 
 img {
-    min-width: 15%;min-height: 25%;
-    max-width: 20%; max-height: 40%;
+    max-width: 20%; max-height: 70%;
     position: absolute;
-    top: 20vh;
+    top: 20vh;s
     left: 40vw;
 }
 
@@ -45,12 +41,13 @@ header {
     width: 100vw; height: 5vw;
     min-height: 5vh; min-width: 5vw;
     text-align: center;
-    background-color: #FCF6B1;
+    background-color: rgb(246, 207, 202);
     font-size: 40px;
     color: salmon;
     text-shadow: 2px 2px 4px #000000;
 }
 
+/*Boton*/
 .start {
     appearance: none;
     background-color: transparent;
@@ -77,9 +74,7 @@ header {
     will-change: transform;
 }
 
-.start:disabled {
-    pointer-events: none;
-}
+
 
 .start:hover {
     color: #fff;
@@ -93,6 +88,7 @@ header {
     transform: translateY(0);
 }
 
+/*Estrellas rotandoe*/
 
 .area {
     background: #A9E5BB;
