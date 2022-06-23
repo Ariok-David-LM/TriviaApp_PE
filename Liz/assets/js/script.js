@@ -7,10 +7,12 @@ const _correctScore = document.getElementById('correct-score');
 const _totalQuestion = document.getElementById('total-question');
 
 let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
+var direccion = sessionStorage.getItem("url");
 
 // load question from API
 async function loadQuestion(){
-    const APIUrl = 'https://opentdb.com/api.php?amount=1';
+    console.log(direccion);
+    const APIUrl = direccion;
     const result = await fetch(`${APIUrl}`)
     const data = await result.json();
     _result.innerHTML = "";

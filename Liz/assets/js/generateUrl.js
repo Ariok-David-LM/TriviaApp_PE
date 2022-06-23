@@ -37,8 +37,9 @@ const generarUrl = () => {
         alert("Verifique que haya seleccionado una categoria, dificultad y tipo.")
     } else {
         url = "https://opentdb.com/api.php?amount=10&" + categoria + "&" + dificultad + "&" + tipo
+        sessionStorage.setItem("url", url);
+        window.open("trivia.html","_self")
     }
-    console.log(url);
 }
 
 //eventos

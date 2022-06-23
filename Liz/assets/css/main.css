@@ -6,9 +6,9 @@
 }
 :root{
     --light-purple-color: #8854C0;
-    --light-color: #fff;
+    --light-color: rgb(246, 207, 202);
     --dark-color: #000;
-    --grey-color: #f2f2f2;
+    --grey-color: #A9E5BB;
     --transition: all 300ms ease-in-out;
 }
 .flex{
