@@ -26,7 +26,7 @@ body{
     background: var(--light-color);
     padding: 1.5rem 4rem 3rem 4rem;
     width: 500px;
-    height: 680px;
+    height: 690px;
     border-top-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
     position: relative;
@@ -104,7 +104,7 @@ body{
     font-size: 1.2rem;
     font-weight: 600;
     padding: .5rem 1rem;    
-    margin: 0 auto 0 auto;
+    margin: 0 auto 10px auto;
     text-transform: uppercase;
     cursor: pointer;
     display: block;

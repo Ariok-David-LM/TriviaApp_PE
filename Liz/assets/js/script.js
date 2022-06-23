@@ -5,9 +5,11 @@ const _playAgainBtn = document.getElementById('play-again');
 const _result = document.getElementById('result');
 const _correctScore = document.getElementById('correct-score');
 const _totalQuestion = document.getElementById('total-question');
+const _selectAgainBtn = document.getElementById('select-again');
 
 let correctAnswer = "", correctScore = askedCount = 0, totalQuestion = 10;
 var direccion = sessionStorage.getItem("url");
+_selectAgainBtn.style.display = "none";
 
 // load question from API
 async function loadQuestion(){
@@ -23,6 +25,10 @@ async function loadQuestion(){
 function eventListeners(){
     _checkBtn.addEventListener('click', checkAnswer);
     _playAgainBtn.addEventListener('click', restartQuiz);
+    _selectAgainBtn.addEventListener('click', () => {
+        window.open("form.html","_self");
+    });
+    // agregar el listener del boton menu
 }
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -102,6 +108,7 @@ function checkCount(){
 
         _result.innerHTML += `<p>Your score is ${correctScore}.</p>`;
         _playAgainBtn.style.display = "block";
+        _selectAgainBtn.style.display = "block";
         _checkBtn.style.display = "none";
     } else {
         setTimeout(function(){
@@ -119,6 +126,7 @@ function setCount(){
 function restartQuiz(){
     correctScore = askedCount = 0;
     _playAgainBtn.style.display = "none";
+    _selectAgainBtn.style.display = "none";
     _checkBtn.style.display = "block";
     _checkBtn.disabled = false;
     setCount();
