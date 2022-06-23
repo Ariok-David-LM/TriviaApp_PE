@@ -84,7 +84,7 @@ body{
     background-color: var(--grey-color);
     color: var(--dark-color);
     border-color: var(--grey-color);
-    box-shadow: 0 4px 0 0 #bbbbbb;
+    box-shadow: 0 4px 0 0 #000000;
 }
 .quiz-options li:active{
     transform: scale(0.97);
@@ -94,7 +94,7 @@ body{
     background-color: var(--grey-color)!important;
     color: var(--dark-color)!important;
     border-color: var(--grey-color)!important;
-    box-shadow: 0 4px 0 0 #bbbbbb!important;
+    box-shadow: 0 4px 0 0 #ac3535!important;
 }
 .quiz-foot button{
     border: none;
