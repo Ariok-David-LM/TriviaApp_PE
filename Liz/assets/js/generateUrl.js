@@ -42,14 +42,14 @@ const generarUrl = () => {
 }
 
 //eventos
-cat_animals.addEventListener('click',() => actualizar("category=27","Animales",1) )
-cat_movies.addEventListener('click', () => actualizar("category=11","Peliculas",1))
-cat_music.addEventListener('click', () => actualizar("category=12","Música",1))
-cat_sports.addEventListener('click', () => actualizar("category=21","Deportes",1))
-cat_videogames.addEventListener('click', () => actualizar("category=15","VideoJuegos",1))
+cat_animals.addEventListener('click',() => actualizar("category=27","Animals",1) )
+cat_movies.addEventListener('click', () => actualizar("category=11","Movies",1))
+cat_music.addEventListener('click', () => actualizar("category=12","Music",1))
+cat_sports.addEventListener('click', () => actualizar("category=21","Sports",1))
+cat_videogames.addEventListener('click', () => actualizar("category=15","VideoGames",1))
 dif_easy.addEventListener('click', () => actualizar("difficulty=easy","Easy",2))
 dif_medium.addEventListener('click', () => actualizar("difficulty=medium","Medium",2))
 dif_hard.addEventListener('click', () => actualizar("difficulty=hard","Hard",2))
-type_TF.addEventListener('click', () => actualizar("type=boolean","Verdadero/Falso",3))
-type_multi.addEventListener('click', () => actualizar("type=multiple","Opcíon Multiple",3))
+type_TF.addEventListener('click', () => actualizar("type=boolean","True/False",3))
+type_multi.addEventListener('click', () => actualizar("type=multiple","Multiple Choice",3))
 boton.addEventListener('click', () => generarUrl())
